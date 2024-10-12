@@ -1,0 +1,51 @@
+/* Shell.css */
+.shell {
+    background-color: #1e1e1e;
+    color: #fff;
+    font-family: monospace;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 600px;
+    height: 400px;
+    overflow-y: auto;
+    border: 2px solid #333;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .shell-output {
+    margin-bottom: 10px;
+  }
+  
+  .shell-command {
+    color: #00ff00; /* Green text for commands */
+  }
+  
+  .shell-output-text {
+    color: #ccc; /* Light grey for output */
+    margin-left: 20px;
+  }
+  
+  .shell-input {
+    display: flex;
+    align-items: center;
+  }
+  
+  .shell-prompt {
+    color: #00ff00;
+    margin-right: 5px;
+  }
+  
+  .shell input {
+    flex: 1;
+    background: none;
+    border: none;
+    color: #fff;
+    font-family: monospace;
+    outline: none;
+    caret-color: #00ff00;
+  }
+  
+  .shell input::placeholder {
+    color: #888;
+  }
+  

@@ -1,0 +1,37 @@
+/* DiskVisualization.css */
+.disk-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+    background: linear-gradient(145deg, #2e2525, #2a363d); /* Grey-black gradient */
+    border: 3px solid #333; /* Dark border for realistic effect */
+    border-radius: 12px; /* Rounded edges for smooth look */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Shadow for 3D effect */
+  }
+  
+  .cell {
+    width: 20px;
+    height: 20px;
+    margin: 2px;
+    border: 1px solid #2a2424; /* Slightly darker border around each block */
+    transition: background-color 0.3s ease, transform 0.2s; /* Smooth transitions */
+    border-radius: 3px; /* Subtle rounded edges */
+  }
+  
+  .used {
+    background-color: red;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5); /* Inner shadow for depth */
+  }
+  
+  .unused {
+    background-color: #87a0a5; /* Muted blue for unused blocks */
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5); /* Inner shadow for depth */
+  }
+  
+  /* Adding a hover effect for realism */
+  .cell:hover {
+    transform: scale(1.05); /* Slight scale up on hover */
+  }
+  
